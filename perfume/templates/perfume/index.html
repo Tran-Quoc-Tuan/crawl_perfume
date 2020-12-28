@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for item in context %}
+<p>{{ item.image }}</p>
+<image src="{{ item.image.url }}"></image>
+{% endfor %}
+</body>
+</html>
