@@ -12,7 +12,7 @@ django.setup()
 
 def crawl_image(ten, url):
     image = Image.objects.create(ten=ten, image=url.split('/')[0])
-    path = image.imagte.path
+    path = image.image.path
     content = requests.get(url=url).content
     default_storage(path, ContentFile(content))
     return image
